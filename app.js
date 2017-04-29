@@ -10,15 +10,12 @@ function Bank() {
 
 Bank.prototype.getStories = function() {
 	$.get(this.baseUrl + this.storiesExt, function(res, err) {
-		console.log(res);
 		app.displayStories(res);
 	})
 }
 
 Bank.prototype.postStory = function(data) {
 	$.post(this.baseUrl + this.storiesExt, JSON.stringify(data), function(res, status) {
-		console.log(res)
-		console.log(status)
   }).done(function() {
 		app.storiesList.prepend("<li class='list-group-item'>" + app.horseIcon + data + "</li>")
   })
@@ -40,7 +37,6 @@ Bank.prototype.addEventListeners = function() {
 	var app = this;
 	this.form.on('submit', function(event) {
 		event.preventDefault();
-		console.log(app.storyTextArea.val());
 		app.postStory(app.storyTextArea.val().trim());
 		app.storyTextArea.val("")
 	})
