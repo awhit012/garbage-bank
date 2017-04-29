@@ -1,0 +1,131 @@
+body {
+	color: #e1413c;
+	/*background-color: white;*/
+	background: darkslategray;
+	font-family: Delius Unicase;
+}
+
+
+
+#stories-list {
+	/*color: #ffffef;*/
+}
+
+header#navbar {
+	width: 100%;
+	top: 0%;
+	position: fixed;
+}
+
+
+.wagon-container {
+  width: 200%;
+  position: relative;
+  float: left;
+  left: -250px;
+}
+
+.wagons {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+.wagon {
+	width: 150px;
+	display: inline;
+	padding: 10px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul.nav-list {
+	margin-top: 4.5%;
+	text-align: center;
+	padding: 0;
+}
+
+li.social-list {
+	float: right;
+}
+
+img.sign-up {
+	float: left;
+	padding: 0;
+	height: 10em;
+	margin-left: -4em;
+}
+
+ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 70%;
+	padding: 0 15px;
+	transition: .2s;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+ul.social-list {
+	margin: 8% 0;
+	float: right;
+}
+
+ul.social-list li {
+	padding: 0;
+	margin: 0 -10px;
+	float: right;
+}
+
+ul.social-list li img {
+	width: 20em;
+	padding: 10%;
+	margin-right: -15em;
+}
+
+#background-img { 
+  	background-size: cover;
+  	margin: -20em 0 0 0;
+  	width: 80%;
+}
+
+#stories-container {
+	height: 400px;
+	width: 100%;
+	margin-top: 100px;
+	text-align: center;
+}
+
+#dolla-bill {
+	width: 80%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8em;
+}
+
+#textarea {
+	width: 100%;
+	margin: 2em 0 2em 0;
+}
+
+.btn-default {
+	height: 40px;
+	margin-top: 25px;
+	background-color: deepskyblue;
+	color: white;
+}
+
+#losers {
+	margin: 1em 0 2em 0;
+}
+
+footer {
+	margin: 2em 0 0 0;
+}
+
+#share-img {
+	margin-top: -2em;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Garbage City Bank</title>
+
+  <meta charset="utf-8">
+  <meta name="author" content="Alex C. White">
+  <meta name="keywords" content="garbage, city, bank, otto, seibold, jotto, mr lunch">
+  <meta name="description" content="A place to share your garbage money stories">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Delius+Unicase&effect=neon">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="parallax1">
+    <img id="background-img" src="assets/garbagecity_bank_transbkgd.png">
+    <header id="navbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <span><a href="http://www.garbagecity.space/" target="_blank"><img class="sign-up" src="assets/garbagecityspace.png"></span></a>
+          </div>
+          <div class="offset-5 col-lg-3 col-md-4">
+            <ul class="social-list">
+              <li><a href="http://www.garbagecity.space/" target="_blank"><img src="assets/redsign.png"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <i class="fa fa-arrow-circle-down" id="arrowIcon" aria-hidden="true"></i>
+  </div>
+
+<div class='wagon-container'>
+  <div class='wagons'>
+    <img src="assets/wellsgarbagewagon.png" class="wagon">
+    <img src="assets/wellsgarbagewagon.png" class="wagon">
+    <img src="assets/wellsgarbagewagon.png" class="wagon">
+    <img src="assets/wellsgarbagewagon.png" class="wagon">
+  </div>
+</div>
+
+<img src="./assets/garbagemoney.png" id="dolla-bill">
+<div id="stories-container" class="offset-2 col-6 col-md-8 col-sm-12" >
+  <img id="share-img" src="./assets/share.png">
+  <form id="form" action="/action_page.php" class="input-group">
+    <input id="textarea" maxlength="200" name="story" placeholder="What kinda crap did you get with your Garbage Money?">
+    </input>
+    <br>
+    <input type="submit" value="Submit" class="btn btn-default">
+  </form>
+
+  <h2 id="losers" class="font-effect-neon">What other losers got:</h2>
+  
+  <ul id="stories-list" class="list-group">
+  </ul>
+  <footer>
+  <a href="http://www.garbagecity.space/"><img src="./assets/wellsgarbage_signup.png"></a>
+</footer>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBQuTUuSt6MdOac5sklH1h5DwVRPUofAzs",
+      authDomain: "garbagecitybank.firebaseapp.com",
+      databaseURL: "https://garbagecitybank.firebaseio.com",
+      projectId: "garbagecitybank",
+      storageBucket: "garbagecitybank.appspot.com",
+      messagingSenderId: "257904341207"
+    };
+    firebase.initializeApp(config);
+  </script>
+</body>
+</html>
