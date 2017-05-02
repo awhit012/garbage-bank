@@ -129,3 +129,15 @@ footer {
 #share-img {
 	margin-top: -2em;
 }
+
+#credits {
+	color: white;
+}
+
+#credits .fa-heart {
+	color: crimson;
+}
+
+#credits a i {
+	color: deepskyblue;
+}
